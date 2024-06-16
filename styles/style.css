@@ -4,6 +4,11 @@
     font-family: "Poppins", sans-serif;
 }
 
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
 .influencer-pro{
     font-size: 1.5rem;
     color: rgba(58, 58, 58, 1);
@@ -83,4 +88,122 @@ main{
 .logo-sec{
     display: flex;
     justify-content: space-evenly;
+    /* box-shadow: 0px 1px 1px 1px rgba(170, 170, 170, 1); */
+    box-shadow: 2px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.collection-sec{
+    margin: 100px auto;
+
+}
+
+.collection-header{
+    text-align: center;
+    font-size: 1.75rem;
+    color:rgba(58, 58, 58, 1);
+    font-weight: 600;
+}
+
+.product-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.product-content{
+    width: 329px;
+    height: 476px;
+    /* background-color: aquamarine; */
+    margin: auto;
+    padding-left: 28px;
+    padding-top: 17px;
+    box-shadow: 2px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    
+    
+    
+}
+
+.product-name{
+    font-size: 1.75rem;
+    color: rgba(24, 25, 31, 1);
+    margin-top: 16px;
+    font-weight: 600;
+    margin-bottom: 0;
+
+}
+
+.cost{
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.87);
+    font-weight: 400;
+    margin-top: 6px;
+}
+
+.product-discription{
+    font-size: 0.87rem;
+    color: rgba(120, 120, 133, 1);
+    padding-top: 0px;
+
+}
+.for-more{
+    color:rgba(224, 44, 109, 0.87) ;
+    text-align: right;
+    margin-top: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.Featured-product{
+    display: flex;
+    gap: 95px;
+}
+.Featured-product div h2{
+    font-size: 2.37rem;
+    color: rgba(10, 8, 38, 1);
+    
+}
+
+/* footer styles */
+footer{
+    background-color: rgba(10, 8, 38, 1);
+    text-align: center;
+    height:280px;
+}
+footer h4, p, i {
+    color: rgba(255, 255, 255, 1);
+}
+footer h4{
+    font-size: 1.5rem;
+    margin-bottom: 0px;
+}
+footer p{
+    font-size: 0.88rem;
+}
+footer div{
+    padding-top: 50px;
+}
+
+/* responsive styles */
+@media screen and (max-width: 576px) {
+header{
+    padding: 20px;
+}
+nav{
+    flex-direction: column;
+    
+}
+.banner-container,.Featured-product{
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 15px;
+}
+.logo-sec{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.product-container{
+    grid-template-columns: repeat(1,1fr);
+    padding: 0px;
+}
+
 }
